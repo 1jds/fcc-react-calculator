@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  padding: 50px;
+}
+
+.outer-container {
+  border: 1px solid #707070;
+  box-sizing: content-box;
+  max-width: 323px;
+  min-width: 100px;
+  box-shadow: 7px 7px 15px rgba(208, 208, 208, 0.5),
+    -7px -7px 15px rgba(208, 208, 208, 0.5),
+    -7px 7px 15px rgba(208, 208, 208, 0.5),
+    7px -7px 15px rgba(208, 208, 208, 0.5);
+}
+
+.container {
+  /*     background-color: pink; */
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(20px, 1fr));
+  max-width: 323px;
+  min-width: 100px;
+  gap: 3px;
+  padding: 3px;
+}
+
+.item {
+  /*     background-color: aqua; */
+  background-color: #fcfcfc;
+  max-width: 77px;
+  height: 51px;
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  line-height: 0px;
+}
+
+.item:hover {
+  background-color: #dedede;
+}
+
+.operator-sign {
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 6px;
+}
+
+.lighter-bg {
+  background-color: #f7f7f7;
+}
+
+#equals {
+  background-color: #91c1e7;
+}
+
+#equals:hover {
+  background-color: #4599db;
+}
+
+.chi-btn {
+  font-size: 0.9rem;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.display-area {
+  background-color: #eee;
+  max-width: 323px;
+  min-width: 100px;
+  min-height: 70px;
+  padding: 10px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.prev-input {
+  background-color: #dcf0fd;
+  max-width: 323px;
+  min-width: 100px;
+  min-height: 50px;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: right;
+  border-bottom: 1px solid lightgrey;
+  overflow-wrap: anywhere;
+  box-shadow: inset 0px 0px 10px #8dd1fd;
+}

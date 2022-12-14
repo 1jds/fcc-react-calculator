@@ -1,8 +1,3 @@
-/** CORE LOGIC is that we pass a string containing a mathematical equation to eval which then interprets it and gives the answer.
- * This method means that we are computing the whole thing at once rather than one step at a time. Thus "3 + 5 * 6 - 2 / 4" = 32.5 rather than 11.5. It would obviously be a lot easier to handle smaller chunks of the equation at a time using the other method!
- *Eval has security concerns, but in a sense the data being inputted to eval is 'sanitised' here, because it is restricted to what can be entered on the calculator, which doesn't include the ability to pass dangerous JS syntax to eval. One could potentially make it even safer by sanitising the data passed to eval with a regex in the immediate vicinity of the eval execution environment.
- **/
-
 function App() {
   // APP STATE
   const [result, setResult] = React.useState("0");
